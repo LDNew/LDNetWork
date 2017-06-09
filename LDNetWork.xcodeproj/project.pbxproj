@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B98B35D33A575F4A1C94AAC /* libPods-LDNetWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF30BB4BEF85F37F12DC04 /* libPods-LDNetWork.a */; };
 		9B92DE061EEA7F2D00DF709B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B92DE051EEA7F2D00DF709B /* main.m */; };
 		9B92DE091EEA7F2D00DF709B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B92DE081EEA7F2D00DF709B /* AppDelegate.m */; };
 		9B92DE0C1EEA7F2D00DF709B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B92DE0B1EEA7F2D00DF709B /* ViewController.m */; };
 		9B92DE0F1EEA7F2D00DF709B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B92DE0D1EEA7F2D00DF709B /* Main.storyboard */; };
 		9B92DE111EEA7F2D00DF709B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B92DE101EEA7F2D00DF709B /* Assets.xcassets */; };
 		9B92DE141EEA7F2D00DF709B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B92DE121EEA7F2D00DF709B /* LaunchScreen.storyboard */; };
+		9B92DE1E1EEA801200DF709B /* NetWorkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B92DE1D1EEA801200DF709B /* NetWorkingManager.m */; };
+		9B92DE211EEA909F00DF709B /* BaseRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B92DE201EEA909F00DF709B /* BaseRequestManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16BF30BB4BEF85F37F12DC04 /* libPods-LDNetWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LDNetWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B922001064A9C71AFCDDEDE /* Pods-LDNetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDNetWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-LDNetWork/Pods-LDNetWork.release.xcconfig"; sourceTree = "<group>"; };
 		9B92DE011EEA7F2D00DF709B /* LDNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B92DE051EEA7F2D00DF709B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B92DE071EEA7F2D00DF709B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,11 @@
 		9B92DE101EEA7F2D00DF709B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B92DE131EEA7F2D00DF709B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B92DE151EEA7F2D00DF709B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B92DE1C1EEA801200DF709B /* NetWorkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkingManager.h; sourceTree = "<group>"; };
+		9B92DE1D1EEA801200DF709B /* NetWorkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkingManager.m; sourceTree = "<group>"; };
+		9B92DE1F1EEA909F00DF709B /* BaseRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestManager.h; sourceTree = "<group>"; };
+		9B92DE201EEA909F00DF709B /* BaseRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestManager.m; sourceTree = "<group>"; };
+		D8F722723503C2A0ACAAF68D /* Pods-LDNetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDNetWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LDNetWork/Pods-LDNetWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B98B35D33A575F4A1C94AAC /* libPods-LDNetWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AC9804F71E2EEA6C91D6038 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8F722723503C2A0ACAAF68D /* Pods-LDNetWork.debug.xcconfig */,
+				1B922001064A9C71AFCDDEDE /* Pods-LDNetWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BC9610523DEF6237DB69007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16BF30BB4BEF85F37F12DC04 /* libPods-LDNetWork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B92DDF81EEA7F2D00DF709B = {
 			isa = PBXGroup;
 			children = (
 				9B92DE031EEA7F2D00DF709B /* LDNetWork */,
 				9B92DE021EEA7F2D00DF709B /* Products */,
+				6AC9804F71E2EEA6C91D6038 /* Pods */,
+				8BC9610523DEF6237DB69007 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +92,7 @@
 				9B92DE081EEA7F2D00DF709B /* AppDelegate.m */,
 				9B92DE0A1EEA7F2D00DF709B /* ViewController.h */,
 				9B92DE0B1EEA7F2D00DF709B /* ViewController.m */,
+				9B92DE1B1EEA7FEA00DF709B /* RequestManager */,
 				9B92DE0D1EEA7F2D00DF709B /* Main.storyboard */,
 				9B92DE101EEA7F2D00DF709B /* Assets.xcassets */,
 				9B92DE121EEA7F2D00DF709B /* LaunchScreen.storyboard */,
@@ -79,6 +110,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9B92DE1B1EEA7FEA00DF709B /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				9B92DE1C1EEA801200DF709B /* NetWorkingManager.h */,
+				9B92DE1D1EEA801200DF709B /* NetWorkingManager.m */,
+				9B92DE1F1EEA909F00DF709B /* BaseRequestManager.h */,
+				9B92DE201EEA909F00DF709B /* BaseRequestManager.m */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B92DE181EEA7F2D00DF709B /* Build configuration list for PBXNativeTarget "LDNetWork" */;
 			buildPhases = (
+				1CE33ACD0176C6A7334B9BAE /* [CP] Check Pods Manifest.lock */,
 				9B92DDFD1EEA7F2D00DF709B /* Sources */,
 				9B92DDFE1EEA7F2D00DF709B /* Frameworks */,
 				9B92DDFF1EEA7F2D00DF709B /* Resources */,
+				4DF5C486C95226D6CA9A84B4 /* [CP] Embed Pods Frameworks */,
+				BCA8F034330A0795624E3AC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +191,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CE33ACD0176C6A7334B9BAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DF5C486C95226D6CA9A84B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LDNetWork/Pods-LDNetWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA8F034330A0795624E3AC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LDNetWork/Pods-LDNetWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B92DDFD1EEA7F2D00DF709B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9B92DE0C1EEA7F2D00DF709B /* ViewController.m in Sources */,
+				9B92DE211EEA909F00DF709B /* BaseRequestManager.m in Sources */,
+				9B92DE1E1EEA801200DF709B /* NetWorkingManager.m in Sources */,
 				9B92DE091EEA7F2D00DF709B /* AppDelegate.m in Sources */,
 				9B92DE061EEA7F2D00DF709B /* main.m in Sources */,
 			);
@@ -269,6 +364,7 @@
 		};
 		9B92DE191EEA7F2D00DF709B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F722723503C2A0ACAAF68D /* Pods-LDNetWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7EEU2TF735;
@@ -281,6 +377,7 @@
 		};
 		9B92DE1A1EEA7F2D00DF709B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B922001064A9C71AFCDDEDE /* Pods-LDNetWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7EEU2TF735;
@@ -310,6 +407,7 @@
 				9B92DE1A1EEA7F2D00DF709B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
